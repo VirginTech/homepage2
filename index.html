@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VirginTech LLC.(工事中)</title>
+  <title>合同会社ヴァージンテック</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!--[if lt IE 9]>
@@ -15,8 +16,104 @@
   <![endif]-->
 </head>
 
-<body>
-  <h1>ウェブサイトリニューアル</h1>
+<body style="padding-top:70px;">
+
+<div class="container">   <!-- メインコンテナ -->
+  
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+          <span class="sr-only">ナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">VirginTech LLC.</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-home"></span> トップ</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> ニュース</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> 会社概要</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 私達について</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+  <!-- トップ画像カルーセル -->
+  <div id="c1" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#c1" data-slide-to="0" class="active"></li>
+      <li data-target="#c1" data-slide-to="1"></li>
+      <li data-target="#c1" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active"><img src="images/top_01.png"></div>
+      <div class="item"><img src="images/top_02.png"></div>
+      <div class="item"><img src="images/top_03.png"></div>
+    </div>
+    <a class="carousel-control left" href="#c1" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#c1" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+
+
+
+</div>   <!-- メインコンテナ -->
+
+<!-- フッター -->
+<footer> 
+  <div class="container-fluid">
+    <div>
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            トップページ<br>
+            ニュース<br>
+            会社概要<br>
+            私達について<br>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            プライバシーポリシー<br>
+            採用情報<br>
+            お問い合わせ<br>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            合同会社ヴァージンテック<br>
+            〒001-0022　札幌市北区 北22条西9丁目 2番 19<br>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <p>
+            Copyright &copy; 2015 VirginTech LLC. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      
+    </div>  
+  </div>
+</footer>
 
 
 </body>

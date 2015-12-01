@@ -1,0 +1,26 @@
+/*==========================================
+ フッターのスタイル
+===========================================*/
+footer {
+  margin-top:50px;
+  background:#FF6347;
+  height:350px;
+}
+footer p {
+  margin-top:20px;
+  font-size: 1.0em;
+  color: #fff;
+  line-height: 1.5em;
+  /*text-align: center;*/
+}
+
+/* PC向けレイアウトの指定：961px以上では固定レイアウト */
+@media only screen and (min-width: 961px) {
+  footer {
+    height:180px;
+  }
+  footer p {
+    text-align: center;
+  }
+
+}
