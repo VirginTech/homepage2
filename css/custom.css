@@ -1,5 +1,5 @@
 /*==========================================
- フッターのスタイル
+ 共通のスタイル
 ===========================================*/
 footer {
   margin-top:50px;
@@ -13,14 +13,31 @@ footer p {
   line-height: 1.5em;
   /*text-align: center;*/
 }
-
-/* PC向けレイアウトの指定：961px以上では固定レイアウト */
+img.thumbnail {
+  max-width: 100px;
+  border-radius: 100%;
+}
+h3.appname {
+  letter-spacing: 0.15em;
+  color: #000;
+  text-shadow: 1px 1px 0px #ccc;
+}
+a.linkcolor{
+  color:#fff;
+}
+/*=============================================
+PC向けレイアウトの指定：961px以上では固定レイアウト 
+===============================================*/
 @media only screen and (min-width: 961px) {
   footer {
     height:180px;
   }
   footer p {
     text-align: center;
+  }
+img.thumbnail {
+  max-width: 150px;
+  border-radius: 100%;
   }
 
 }

@@ -3,24 +3,58 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="keywords" content="ヴァージンテック,バージンテック,virgintech,アプリ,ゲーム" />
+  <meta name="description" content="スマートフォン向けゲームアプリの企画・開発" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>合同会社ヴァージンテック</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  
+<!--
+============================= 
+Googleアナリティクス
+=============================
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49583290-1', 'virgintech.co.jp');
+  ga('send', 'pageview');
+</script>
+-->
+
 </head>
 
 <body style="padding-top:70px;">
 
+<!--
+============================= 
+Facebookボックスjs
+=============================
+-->
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div class="container">   <!-- メインコンテナ -->
   
-  <!-- ナビゲーションバー -->
+  <!--
+  ============================= 
+  ナビゲーションバー 
+  =============================
+  -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       
@@ -31,25 +65,29 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">VirginTech LLC.</a>
+        <a href="./" class="navbar-brand">VirginTech LLC.</a>
       </div>
       
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="nav navbar-nav">
-          <li><a href="#"><span class="glyphicon glyphicon-home"></span> トップ</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> ニュース</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> 会社概要</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 私達について</a></li>
+          <li><a href="./"><span class="glyphicon glyphicon-home"></span> トップ</a></li>
+          <li><a href="./whatnew.html"><span class="glyphicon glyphicon-list-alt"></span> ニュース</a></li>
+          <li><a href="./overview.html"><span class="glyphicon glyphicon-info-sign"></span> 会社概要</a></li>
+          <li><a href="./aboutus.html"><span class="glyphicon glyphicon-user"></span> 私達について</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a></li>
+          <li><a href="./contactus.html"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a></li>
         </ul>
       </div>
       
     </div>
   </nav>
 
-  <!-- トップ画像カルーセル -->
+  <!-- 
+  ============================
+  トップ画像カルーセル 
+  ============================
+  -->
   <div id="c1" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#c1" data-slide-to="0" class="active"></li>
@@ -69,12 +107,119 @@
     </a>
   </div>
 
+  <!-- 
+  ==========================
+  余白
+  ==========================
+  -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 text-center" style="height:25px;">
 
+    </div>
+  </div>
+  
+  <!-- 
+  ==========================
+  ボディレイアウト 
+  ==========================
+  -->
+  <div class="row">  <!-- ボディ -->
+    <div class="col-xs-12 col-sm-9">
+  
+      <!-- 
+      ==========================
+      Appサムネイル表示 
+      ==========================
+      -->
+      <div class="panel panel-primary"> <!-- パネル -->
+        <div class="panel-heading">
+          <h2 class="panel-title text-center"><span class="glyphicon glyphicon-phone"></span> ゲームの紹介</h2>
+        </div>
+        <div class="panel-body"> <!-- パネルボディ -->
 
+          <div class="media">
+            <a href="./product/flyinghigh/flyinghigh.html" class="media-left">
+              <img src="./product/flyinghigh/img/thumbnail.png" class="thumbnail">
+            </a>
+            <div class="media-body">
+              <h3 class="media-heading appname">【フライング ハイ！】</h3>
+              タップでスロットル全開！君はエースパイロット！広大な大空を駆けめぐれ！ 旧式だけど小回りの効く飛行機を操って、難攻不落のステージに挑戦しよう！
+            </div>
+          </div>
 
+          <div class="media">
+            <a href="./product/windmill/windmill.html" class="media-left">
+              <img src="./product/windmill/img/thumbnail.png" class="thumbnail">
+            </a>
+            <div class="media-body">
+              <h3 class="media-heading appname">【ウィンドミル 〜風車〜】</h3>
+              「ウィンドミル 〜風車〜」は、落ちてくるボールをキャッチするだけのシンプルでカジュアルな物理アクション・ゲームです。カジュアルゲームなので、待ち時間や空き時間など、少しの時間でもプレイを楽しめます。
+            </div>
+          </div>
+
+          <div class="media">
+            <a href="./product/sengokuhero/sengokuhero.html" class="media-left">
+              <img src="./product/sengokuhero/img/thumbnail.png" class="thumbnail">
+            </a>
+            <div class="media-body">
+              <h3 class="media-heading appname">【戦国HERO】</h3>
+              「戦国HERO」はiPhone・iPadで楽しめる、オンライン・タワーディフェンス・バトルシミュレーションです。 カジュアルゲームなので、待ち時間や空き時間など、少しの時間でもプレイを楽しめます。 世界中のプレイヤーと競い合いましょう！
+            </div>
+          </div>
+
+          <div class="media">
+            <a href="./product/puddingpanic/puddingpanic.html" class="media-left">
+              <img src="./product/puddingpanic/img/thumbnail.png" class="thumbnail">
+            </a>
+            <div class="media-body">
+              <h3 class="media-heading appname">【ぷにぷにパニック！】</h3>
+              「ぷにぷに！パニック！」はiPhone・iPadで楽しめる、シンプルでカジュアルなラインドローアクションゲームです。 待ち時間や空き時間など、少しの時間でもプレイを楽しめます。 あなただけの最高レヴェルを目指しましょう！
+            </div>
+          </div>
+    
+          <div class="media">
+            <a href="./product/animalswar/animalswar.html" class="media-left">
+              <img src="./product/animalswar/img/thumbnail.png" class="thumbnail">
+            </a>
+            <div class="media-body">
+              <h3 class="media-heading appname">【大戦略！アニマル大戦争】</h3>
+              「大戦略！アニマル大戦争！」はiPhoneで楽しめる、シンプルでカジュアルな、縦スクロール・リアルタイム・ストラテジーです。 カジュアルゲームなので、待ち時間や空き時間など、少しの時間でもゲームプレイを楽しめます。
+            </div>
+          </div>
+        
+        </div> <!-- パネルボディ -->
+        <div class="panel-footer text-center">
+          <span class="glyphicon glyphicon-thumbs-up"></span> ぜひ遊んでね！
+        </div>
+
+      </div> <!-- パネル -->
+        
+    </div>
+    
+    <div class="col-xs-12 col-sm-3">
+      <!-- SNSボタン -->
+      <a href="https://twitter.com/VirginTechLLC" title=""><img src="images/s_twitter.png" alt="" /></a>
+			<a href="https://www.facebook.com/pages/VirginTech-LLC/516907375075432" title=""><img src="images/s_facebook.png" alt="" /></a>
+			<a href="https://plus.google.com/+VirgintechCoJpLLC" title=""><img src="images/s_google.png" alt="" /></a>
+	    <!-- アプリブ・バナー -->
+			<a href="http://app-liv.jp/" target="_blank"><img src="http://img.app-liv.jp/link/appliv_xs.gif" alt="Appliv(アプリヴ) -iPhone/Androidアプリ発見サービス" /></a>
+	    <p>		
+  		<!-- フェイスブック　ライクボックス -->
+  		<div class="fb-page" data-href="https://www.facebook.com/virgintech.co.jp" data-width="250" data-height="680" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/virgintech.co.jp"><a href="https://www.facebook.com/virgintech.co.jp">VirginTech LLC.</a></blockquote></div></div>
+      <p>
+			<!-- アンドロイダー認定書 -->
+			<a href="https://androider.jp/developer/e9c0a209c53ce84c3cd1b2f854e87408/?from=developerBanner" title="アンドロイダー公認デベロッパー認証"><img src="https://androider.jp/devbanner/e9c0a209c53ce84c3cd1b2f854e87408/androider_certification.png" alt="アンドロイダー公認デベロッパー認証"></a>
+    </div>
+    
+  </div>  <!-- ボディ -->
+  
 </div>   <!-- メインコンテナ -->
 
-<!-- フッター -->
+<!-- 
+========================
+フッター 
+========================
+-->
 <footer> 
   <div class="container-fluid">
     <div>
@@ -82,17 +227,17 @@
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <p>
-            トップページ<br>
-            ニュース<br>
-            会社概要<br>
-            私達について<br>
+            <a href="./" class="linkcolor">トップページ</a><br>
+            <a href="./whatnew.html" class="linkcolor">ニュース</a><br>
+            <a href="./overview.html" class="linkcolor">会社概要</a><br>
+            <a href="./aboutus.html" class="linkcolor">私達について</a><br>
           </p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <p>
-            プライバシーポリシー<br>
-            採用情報<br>
-            お問い合わせ<br>
+            <a href="./privacypolicy.html" class="linkcolor">プライバシーポリシー</a><br>
+            <a href="./recruit.html" class="linkcolor">採用情報</a><br>
+            <a href="./contactus.html" class="linkcolor">お問い合わせ</a><br>
           </p>
         </div>
         <div class="col-xs-12 col-sm-4">
@@ -115,7 +260,13 @@
   </div>
 </footer>
 
-
+<!-- 
+========================
+Bootstrap.jsの読み込み 
+========================
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
