@@ -25,19 +25,69 @@ h3.appname {
 a.linkcolor{
   color:#fff;
 }
+.screenshot_vertical {
+  border:solid 0px; 
+  height:235px; 
+  width:320px; 
+  overflow:auto; 
+  white-space:nowrap;
+  margin-top:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.screenshot_horizontal {
+  border:solid 0px; 
+  height:140px; 
+  width:320px; 
+  overflow:auto; 
+  white-space:nowrap;
+  margin-top:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
 /*=============================================
-PC向けレイアウトの指定：961px以上では固定レイアウト 
+タブレット向けレイアウトの指定
 ===============================================*/
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 668px) {
   footer {
     height:180px;
   }
   footer p {
     text-align: center;
   }
-img.thumbnail {
-  max-width: 150px;
-  border-radius: 100%;
+  img.thumbnail {
+      max-width: 150px;
+      border-radius: 100%;
+    }
+  .screenshot_vertical {
+    height:235px; 
+    width:500px; 
   }
-
+  .screenshot_horizontal {
+    height:140px; 
+    width:500px; 
+  }
+}
+/*=============================================
+PC向けレイアウトの指定：769px以上では固定レイアウト 
+===============================================*/
+@media only screen and (min-width: 769px) {
+  footer {
+    height:180px;
+  }
+  footer p {
+    text-align: center;
+  }
+  img.thumbnail {
+      max-width: 150px;
+      border-radius: 100%;
+    }
+  .screenshot_vertical {
+    height:235px; 
+    width:550px; 
+  }
+  .screenshot_horizontal {
+    height:140px; 
+    width:680px; 
+  }
 }
