@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="keywords" content="ヴァージンテック,バージンテック,virgintech,アプリ,ゲーム" />
+  <meta name="description" content="お問い合わせ" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>【お問い合わせ】合同会社ヴァージンテック</title>
@@ -19,6 +19,7 @@
 ============================= 
 Googleアナリティクス
 =============================
+-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +28,6 @@ Googleアナリティクス
   ga('create', 'UA-49583290-1', 'virgintech.co.jp');
   ga('send', 'pageview');
 </script>
--->
 
 </head>
 
@@ -68,7 +68,51 @@ Googleアナリティクス
     </div>
   </nav>
 
-
+  <!--
+  ============================= 
+  お問い合わせ
+  =============================
+  -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-1"></div>
+    
+    <div class="col-xs-12 col-sm-10">
+  
+      <div class="panel panel-info">
+        <div class="panel-heading"><h2 class="panel-title">お問い合わせ</h2></div>
+          <div class="panel-body">
+            <p>
+            
+              弊社へのお問い合わせは、下記メールアドレス宛もしくは、下記メールフォームをご利用下さい。<br>
+              <img src="./images/mail.png" border=0>
+              <p>
+                
+              <form action="./postmail/postmail.cgi" method="post">
+                <div class="form-group">
+                  <label for="name1">お名前</label>
+                  <input type="text" name="_name" size="35" class="form-control" id="name1" />
+                </div>
+  
+                <div class="form-group">
+                  <label for="mail1">メールアドレス</label>
+                  <input type="text" name="_email" size="35" class="form-control" id="mail1" />
+                </div>
+                
+                <div class="form-group">
+                  <label for="ask1">お問い合わせ内容</label>
+                  <textarea name="_メッセージ" rows="7" cols="48" class="form-control" id="ask1"></textarea>
+                </div>
+                
+                <input type="submit" value="送信する" class="btn btn-primary"/>
+                <input type="reset" value="リセット" class="btn btn-default"/>
+              </form>
+                  
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="col-xs-12 col-sm-1"></div>
+  </div>  
 
 
 
